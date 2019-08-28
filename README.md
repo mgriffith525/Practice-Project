@@ -1,41 +1,12 @@
 # Hello World!
 ## My name is Meghan and I'm a Human Resources Coordinator at Bonfyre!
-#### I **love** concerts, movies, and traveling! 
 
-#### In the past 7 years I've lived in 
-1. Illinois
-- 19 years
+### **Three things people should know about me:**
+1. I've lived in 5 states and 1 country in the past 7 years
+2. I go to the movies at least once a day
+3. I worked for The Walt Disney Company for 2 and a half years
 
-    -  Belleville
+#### I'm here because I want to learn more about web development and make the change into being a developer. 
 
-2. Kentucky
-- 2 years
 
-    - Lexington 
-
-3. Florida
-- 2 years
-
-    - Orlando
-
-4. California
-- 3 months
-
-    - Anaheim
-
-5. Ireland
-- 5 months
-    
-    - Dublin 
-
-6. Missouri
-- 2 years
-
-    - St. Louis
-
-##### Biggest fears: snakes and spiders. I am a total wuss when it comes to horror movies but Halloween is my favorite holiday _(shrug)_
-
-[Here's my LinkedIn](www.linkedin.com/in/meghanmgriffith)
-
-![Cute doggo](https://picsum.photos/id/237/200/300)
-
+[![alt text](./img/meghan-avatar.png)](http://www.linkedin.com/in/meghanmgriffith)
