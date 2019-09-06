@@ -1,3 +1,13 @@
-body {
+:root {
+  --primary: #bc2170;
+  --primary-variant: #487f7b;
+}
+
+h1 {
+  background: var(--primary);
+}
+
+h2 {
   font-family: 'Montserrat', sans-serif;
+  background: var(--primary-variant);
 }
