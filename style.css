@@ -1,13 +1,29 @@
 :root {
-  --primary: #bc2170;
-  --primary-variant: #487f7b;
+  --first-color: #488cff;
+  --second-color: #ffff8c;
 }
 
-h1 {
-  background: var(--primary);
+#h1 {
+  background-color: #C8CCC1;
+  color: #178C7E;
+
 }
 
-h2 {
-  font-family: 'Montserrat', sans-serif;
-  background: var(--primary-variant);
+#firstParagraph {
+  background-color: var(white);
+  color: var(black);
+}
+
+#secondParagraph {
+  background-color: var(--second-color);
+  color: var(--first-color);
+}
+
+#container {
+  --first-color: #48ff32;
+}
+
+#thirdParagraph {
+  background-color: var(--first-color);
+  color: var(--second-color);
 }
