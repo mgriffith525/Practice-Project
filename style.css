@@ -10,8 +10,8 @@
 }
 
 #firstParagraph {
-  background-color: var(white);
-  color: var(black);
+  background-color: var(#FFFFFF);
+  color: var(#000000);
 }
 
 #secondParagraph {
