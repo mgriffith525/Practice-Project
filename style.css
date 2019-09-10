@@ -8,12 +8,16 @@
   --primary: #D17455;
 }
 
-## header,
+/* header,
 section:nth-of-type(odd),
 footer {
   background: var(--primary);
   color: var(--primary-text); 
-} ##
+} */
+
+li:hover {
+    background: #D17455;
+  }
 
 nav {
   background-color: #C8CCC1;
