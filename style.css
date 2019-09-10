@@ -26,10 +26,13 @@ h1 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   text-emphasis: bold;
+  margin: 5px;
+  margin-bottom: 5px;
 }
 h2 {
   background-color: #178C7E;
   color: #C8CCC1;
+  text-align: center;
 }
 
 firstParagraph {
@@ -80,3 +83,26 @@ img {
   margin-top: 15px;
   box-shadow: 3px 10px 10px black;
 }
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+/* Remove underlines */
+nav a {
+  text-decoration: none;
+}
+
+nav li {
+  padding: var(--base-spacing) 0;
+}
+
+ul {
+  padding: 0;
+}
+
+nav a:hover {
+  background: var(--second-color);
+}
+
