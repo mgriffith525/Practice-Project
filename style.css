@@ -1,29 +1,56 @@
 :root {
   --first-color: #488cff;
   --second-color: #ffff8c;
+  --error: #FF0000;
+  --primary-text: #000000;
+  --base-spacing: 8px;
+  --border-primary: solid #000000 6px;
+  --primary: #D17455;
 }
 
-#h1 {
+## header,
+section:nth-of-type(odd),
+footer {
+  background: var(--primary);
+  color: var(--primary-text); 
+} ##
+
+nav {
   background-color: #C8CCC1;
   color: #178C7E;
-
 }
 
-#firstParagraph {
+h1 {
+  background-color: #C8CCC1;
+  color: #178C7E;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  text-emphasis: bold;
+}
+h2 {
+  background-color: #C8CCC1;
+  color: #178C7E;
+}
+
+firstParagraph {
   background-color: var(#FFFFFF);
-  color: var(#000000);
+  color: #178C7E;
 }
 
-#secondParagraph {
+secondParagraph {
   background-color: var(--second-color);
   color: var(--first-color);
 }
 
-#container {
+container {
   --first-color: #48ff32;
 }
 
-#thirdParagraph {
+thirdParagraph {
   background-color: var(--first-color);
   color: var(--second-color);
+}
+
+footer {
+  
 }
