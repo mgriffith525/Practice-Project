@@ -54,3 +54,19 @@ thirdParagraph {
 footer {
   
 }
+
+/*Layout*/
+
+figure,
+h1 {
+  margin: 0;
+}
+
+figure,
+h2 {
+  margin: 0;
+}
+
+figure {
+  alignment
+}
