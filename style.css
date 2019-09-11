@@ -12,6 +12,13 @@
   font-size: 48px;
 }
 
+.hero {
+  background: url(https://picsum.photos/680/420) center-center no-repeat; 
+  background-size: cover;
+  height: 20vh;
+  max-height: 420px;
+}
+
 /* Moving icon to right side */
 nav .fas {
   margin: var(--base-spacing);
