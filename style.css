@@ -127,6 +127,11 @@ nav a,
   text-decoration: none;
 }
 
+section {
+  padding: var(--base-spacing);
+}
+
+/* Create clickable button */
 .hero a {
   background-color: var(--second-color);
   padding: var(--base-spacing);
@@ -150,3 +155,10 @@ nav a:hover {
   background: var(--second-color);
 }
 
+.read-more-btn {
+  background: gray;
+  padding: var(--base-spacing);
+  border-radius: var(--base-spacing);
+  margin: var(--base-spacing) 0;
+  display: inline-block;  
+}
