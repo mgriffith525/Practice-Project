@@ -60,6 +60,7 @@ h1 {
   text-emphasis: bold;
   margin-top: 5px;
 }
+
 h2 {
   background-color: #178C7E;
   color: #C8CCC1;
@@ -121,9 +122,21 @@ nav ul {
 }
 
 /* Remove underlines */
-nav a {
+nav a,
+.hero a {
   text-decoration: none;
 }
+
+.hero a {
+  background-color: var(--second-color);
+  padding: var(--base-spacing);
+  border-radius: var(--base-spacing);
+}
+
+/* Hover for CTA button 
+.hero a:hover {
+  background: var(--second-color);
+} */
 
 nav li {
   padding: var(--base-spacing) 0;
