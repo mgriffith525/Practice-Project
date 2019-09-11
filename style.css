@@ -8,6 +8,15 @@
   --primary: #D17455;
 }
 
+.fas {
+  font-size: 48px;
+}
+
+nav .fas {
+  margin: var(--base-spacing);
+}
+
+
 ## header,
 section:nth-of-type(odd),
 footer {
@@ -26,8 +35,7 @@ h1 {
   text-align: center;
   font-family: 'Montserrat', sans-serif;
   text-emphasis: bold;
-  margin: 5px;
-  margin-bottom: 5px;
+  margin-top: 5px;
 }
 h2 {
   background-color: #178C7E;
@@ -64,7 +72,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: var(--base-spacing);
 }
 
 
