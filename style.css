@@ -19,17 +19,27 @@ nav .fas {
   position: absolute;
 }
 
+nav {
+  min-height: 72px;
+}
 
-## header,
+nav .is-hidden {
+  height: 0;
+  font-size: 0;
+}
+
+/* Extra 
+header,
 section:nth-of-type(odd),
 footer {
   background: var(--primary);
   color: var(--primary-text); 
-} ##
+} */
 
 nav {
   background-color: #C8CCC1;
   color: #178C7E;
+  min-height: 72px;
 }
 
 h1 {
