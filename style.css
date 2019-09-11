@@ -86,8 +86,22 @@ thirdParagraph {
   color: var(--second-color);
 }
 
+footer a {
+  color: pink;
+}
+
 footer {
-  
+  padding: calc(var(--base-spacing) * 2);
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
 }
 
 /*Layout*/
@@ -122,8 +136,10 @@ nav ul {
 }
 
 /* Remove underlines */
+footer a,
 nav a,
-.hero a {
+.hero a,
+.read-more-btn {
   text-decoration: none;
 }
 
