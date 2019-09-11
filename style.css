@@ -12,8 +12,11 @@
   font-size: 48px;
 }
 
+/* Moving icon to right side */
 nav .fas {
   margin: var(--base-spacing);
+  transform: translateX(calc(100vw - (var(--base-spacing)*10)));
+  position: absolute;
 }
 
 
