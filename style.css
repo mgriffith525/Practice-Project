@@ -200,6 +200,39 @@ section p {
   font-size: 0;
 }
 
+/* Form */
+form,
+form div {
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  padding: var(--base-spacing);
+}
+
+input,
+textarea {
+  border: solid thin pink;
+  max-width: 80vw;
+
+}
+
+form div {
+  margin: var(--base-spacing);
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="submit"] {
+  display: inline-block;
+  max-width: calc(var(--base-spacing)) * 6;
+  min-height: calc(var(--base-spacing)) * 12;
+  text-align: center;
+  border-radius: var(--base-spacing);
+  margin: var(--base-spacing);
+}
+
 /* Tablet */
 @media screen and (min-width: 768px) {
   section {
