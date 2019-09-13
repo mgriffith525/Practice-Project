@@ -89,7 +89,8 @@ thirdParagraph {
 }
 
 footer a {
-  color: pink;
+  color: white;
+  background: #C8CCC1;
 }
 
 footer {
@@ -99,6 +100,8 @@ footer {
 footer ul {
   display: flex;
   justify-content: space-between;
+  background-color: #C8CCC1;
+  padding: 10px;
 }
 
 ul {
@@ -175,6 +178,10 @@ nav a:hover {
   background: var(--second-color);
 }
 
+section p {
+  margin-bottom: auto;
+}
+
 .read-more-btn {
   background: gray;
   padding: var(--base-spacing);
@@ -185,7 +192,7 @@ nav a:hover {
   align-self: center;
 }
 .hero {
-  height: 60vh;
+  height: 50vh;
 }
 
 .is-hidden--mobile {
@@ -200,7 +207,7 @@ nav a:hover {
     flex-direction: column;
   }
   .read-more-btn {
-    max-width: calc(var(--base-spacing))* 15;
+    max-width: calc(var(--base-spacing)) * 15;
     text-align: center;
   }
   .is-hidden--tablet {
@@ -229,5 +236,8 @@ nav a:hover {
   }
   .is-shown--desktop {
     font-size: initial;
+  }
+  .flex-container--desktop {
+    display: flex;
   }
 }
