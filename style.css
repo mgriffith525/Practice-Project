@@ -184,6 +184,9 @@ nav a:hover {
   max-width: 120px;
   align-self: center;
 }
+.hero {
+  height: 60vh;
+}
 
 .is-hidden--mobile {
   height: 0;
