@@ -5,7 +5,7 @@
   --primary-text: #000000;
   --base-spacing: 8px;
   --border-primary: solid #000000 6px;
-  --primary: #D17455;
+  --primary: #d17455;
 }
 
 .fas {
@@ -13,7 +13,7 @@
 }
 
 .hero {
-  background: url(https://picsum.photos/680/420); 
+  background: url(https://picsum.photos/680/420);
   background-size: cover;
   height: 20vh;
   max-height: 420px;
@@ -25,7 +25,7 @@
 /* Moving icon to right side */
 nav .fas {
   margin: var(--base-spacing);
-  transform: translateX(calc(100vw - (var(--base-spacing)*10)));
+  transform: translateX(calc(100vw - (var(--base-spacing) * 10)));
   position: absolute;
 }
 
@@ -38,12 +38,13 @@ nav .is-hidden {
   font-size: 0;
 }
 
-/* Extra 
+
+/* Extra
 header,
 section:nth-of-type(odd),
 footer {
   background: var(--primary);
-  color: var(--primary-text); 
+  color: var(--primary-text);
 } */
 
 nav {
@@ -55,10 +56,11 @@ nav {
 h1 {
   background-color: #C8CCC1;
   color: #178C7E;
-  text-align: center;
+  /* text-align: center;  */
   font-family: 'Montserrat', sans-serif;
   text-emphasis: bold;
   margin-top: 5px;
+  align-self: center;
 }
 
 h2 {
@@ -109,7 +111,7 @@ ul {
 header {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
 }
 
 
@@ -156,7 +158,7 @@ section {
   border-radius: var(--base-spacing);
 }
 
-/* Hover for CTA button 
+/* Hover for CTA button
 .hero a:hover {
   background: var(--second-color);
 } */
@@ -178,11 +180,17 @@ nav a:hover {
   padding: var(--base-spacing);
   border-radius: var(--base-spacing);
   margin: var(--base-spacing) 0;
-  display: inline-block; 
+  display: inline-block;
   max-width: 120px;
-  align-self: center; 
+  align-self: center;
 }
 
+.is-hidden--mobile {
+  height: 0;
+  font-size: 0;
+}
+
+/* Tablet */
 @media screen and (min-width: 768px) {
   section {
     display: flex;
@@ -192,14 +200,31 @@ nav a:hover {
     max-width: calc(var(--base-spacing))* 15;
     text-align: center;
   }
+  .is-hidden--tablet {
+    height: 0;
+    font-size: 0;
+  }
 }
 
+/* Desktop */
 @media screen and (min-width: 1024px) {
   header {
     flex-direction: row;
     padding: calc(var(--base-spacing)) * 3;
   }
   header figure {
-    margin-right: calc(var(--base-spacing)) * 2;
+    margin-right: calc(var(--base-spacing)) * 3;
+  }
+  nav ul {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+  .is-hidden--desktop {
+    height: 0;
+    font-size: 0;
+  }
+  .is-shown--desktop {
+    font-size: initial;
   }
 }
