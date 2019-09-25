@@ -1,25 +1,7 @@
-function greeter(question = "What is your name?") {
-  let answer = prompt(question);
+const hamburger = document.querySelector(".fa-hamburger");
+const hiddenUL = document.querySelector("ul");
 
-  if (answer === "") {
-    return greeter(); // recursion
-  }
-  return answer;
-}
-
-document.querySelector('#root').innerHTML = `<p>${greeter()}</p>`
-
-
-
-// const answer = greeter();
-// const textContent= document.querySelector('h1').textContent = answer;
-// console.log(textContent);
-
-
-// const answer = greeter("Why is this class the  worst?");
-// console.log(answer);
-
-// const textContent= document.querySelector('h1').textContent = "Meghan";
-
-//const msg = prompt("What is your name?");
-//console.log(msg);
+hamburger.addEventListener('click', function() {
+//  hiddenUL.classList.remove("is-hidden--mobile");
+hiddenUL.classList.toggle("is-hidden--mobile");
+})
