@@ -1,5 +1,5 @@
-function greeter (question = "What is your name?") {
-  const answer = prompt(question);
+function greeter(question = "What is your name?") {
+  let answer = prompt(question);
 
   if (answer === "") {
     return greeter(); // recursion
@@ -7,8 +7,7 @@ function greeter (question = "What is your name?") {
   return answer;
 }
 
-// TODO: Resolve issue where h1 is not updated if user gives blank answer
-document.querySelector('h1').textContent = greeter();
+document.querySelector('#root').innerHTML = `<p>${greeter()}</p>`
 
 
 
