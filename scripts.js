@@ -2,7 +2,7 @@ function greeter (question = "What is your name?") {
   const answer = prompt(question);
 
   if (answer === "") {
-    greeter(); // recursion
+    return greeter(); // recursion
   }
   return answer;
 }
