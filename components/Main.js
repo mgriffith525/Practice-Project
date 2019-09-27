@@ -1,4 +1,5 @@
-export default `<main>
+export default function() {
+  return `<main>
 <div class="hero">
   <a href="#">Fake CTA Button</a>
 </div>
@@ -29,3 +30,4 @@ export default `<main>
 </section>
 </div>
 </main>`
+}
