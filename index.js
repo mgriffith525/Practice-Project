@@ -1,10 +1,11 @@
 import { Header, Nav, Main, Footer } from "./components";
+import { linkSync } from "fs";
 
 const state = {
-  Home: {
+  home: {
     heading: 'Home Page'
   },
-  About: {
+  about: {
     heading: 'About Page'
   }
 }
@@ -33,13 +34,22 @@ document.querySelector("#root").innerHTML = `
 `;
 }
 
-render(state.Home);
+render();
 
-const aboutLink = document.querySelector('#about');
+const navLinks = document.querySelectorAll('nav a');
 
-aboutLink.addEventListener('click', function(event) {
-  event.preventDefault();
-  render(state[event.target.textContent]);
-})
+for(let i = 0; i < navLinks.length; i += 1) {
+  navLinks[i].addEventListener('click', function(event) {
+    event.preventDefault();
+  console.log('I am clicked');
+  })
+}
+
+
+
+// aboutLink.addEventListener('click', function(event) {
+  // event.preventDefault();
+  // render(state[event.target.textContent]);
+// })
 
 
