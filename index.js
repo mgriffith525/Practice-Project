@@ -1,27 +1,5 @@
 import { Header, Nav, Main, Footer } from "./components";
-
-const state = {
-  home: {
-    heading: 'Home Page',
-    links: ["Home", "About", "Contact", "Blog", "Gallery"]
-  },
-  about: {
-    heading: 'About Page',
-    links: ["Home", "About", "Contact", "Blog", "Gallery"]
-  },
-  contact: {
-    heading: 'Contact Page',
-    links: ["Home", "About", "Contact", "Blog", "Gallery"]
-  },
-  gallery: {
-    heading: 'Gallery Page',
-    links: ["Home", "About", "Contact", "Blog", "Gallery"]
-  },
-  blog: {
-    heading: 'Blog Page',
-    links: ["Home", "About", "Contact", "Blog", "Gallery"]
-  },
-}
+import { Home, About, Contact, Gallery, Blog, Links } from "./store";
 
 /*import Header from "./components/Header";
 import Nav from "./components/Nav";
@@ -38,7 +16,7 @@ console.log(Footer);*/
 /* We want to assign the markup that is contained in the component to the innerHTML
 */
 
-function render (st = state.home) {
+function render (st = Home) {
   console.log(`render piece of state with heading ${st.heading}`);
     document.querySelector("#root").innerHTML = `
       ${Header(st.heading)}
@@ -56,7 +34,7 @@ for(let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', function(event) {
     event.preventDefault();
     console.log(event.target.textContent);
-    render(state[event.target.textContent.toLowerCase()]);
+    render(event.target.textContent);
   })
 }
 
