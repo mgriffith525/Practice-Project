@@ -50,7 +50,7 @@ function render (st = state.home) {
 
 render();
 
-const navLinks = document.querySelectorAll('nav a');
+const navLinks = document.querySelectorAll('nav a, footer a');
 
 for(let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', function(event) {
