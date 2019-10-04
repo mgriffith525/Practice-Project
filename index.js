@@ -1,13 +1,26 @@
 import { Header, Nav, Main, Footer } from "./components";
-import { linkSync } from "fs";
 
 const state = {
   home: {
-    heading: 'Home Page'
+    heading: 'Home Page',
+    links: ["Home", "About", "Contact", "Blog", "Gallery"]
   },
   about: {
-    heading: 'About Page'
-  }
+    heading: 'About Page',
+    links: ["Home", "About", "Contact", "Blog", "Gallery"]
+  },
+  contact: {
+    heading: 'Contact Page',
+    links: ["Home", "About", "Contact", "Blog", "Gallery"]
+  },
+  gallery: {
+    heading: 'Gallery Page',
+    links: ["Home", "About", "Contact", "Blog", "Gallery"]
+  },
+  blog: {
+    heading: 'Blog Page',
+    links: ["Home", "About", "Contact", "Blog", "Gallery"]
+  },
 }
 
 /*import Header from "./components/Header";
@@ -25,12 +38,13 @@ console.log(Footer);*/
 /* We want to assign the markup that is contained in the component to the innerHTML
 */
 
-function render(st = state.Home) {
-document.querySelector("#root").innerHTML = `
-  ${Header(st.heading)}
-  ${Nav()}
-  ${Main()}
-  ${Footer()}
+function render (st = state.home) {
+  console.log(`render piece of state with heading ${st.heading}`);
+    document.querySelector("#root").innerHTML = `
+      ${Header(st.heading)}
+      ${Nav(st)}
+      ${Main()}
+      ${Footer()}
 `;
 }
 
@@ -41,15 +55,10 @@ const navLinks = document.querySelectorAll('nav a');
 for(let i = 0; i < navLinks.length; i += 1) {
   navLinks[i].addEventListener('click', function(event) {
     event.preventDefault();
-  console.log('I am clicked');
+    console.log(event.target.textContent);
+    render(state[event.target.textContent.toLowerCase()]);
   })
 }
 
-
-
-// aboutLink.addEventListener('click', function(event) {
-  // event.preventDefault();
-  // render(state[event.target.textContent]);
-// })
 
 
